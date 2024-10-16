@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.docsTableWrapper {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.docsTableWrapper {
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a max-width for larger screens */
+    margin: 0 auto; /* Center the table container */
+    margin-top: 20px;
+}
+
+.docsTableWrapper table {
+    width: 100%; /* Make the table take full width */
+    border-collapse: collapse; /* Merge table borders */
+}
+
+.docsTableWrapper th, .docsTableWrapper td {
+    border: 1px solid #d1d3d4; /* Add borders to cells */
+    padding: 12px; /* Add some padding */
+    text-align: left; /* Align text to the left */
+}
+
+.docsTableWrapper th {
+    background-color: #f5f5f5; /* Optional: background for headers */
+}
+
+.docsTableWrapper .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+/* Additional styling as needed */
+
+
+.docsTableWrapper table {
+    display: block;
+    width: 100%;
+    max-height: 90vh;
+    overflow: auto;
+}
+
+.docsTableWrapper tbody tr:nth-of-type(2n+1) {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.docsTableWrapper tbody tr:nth-of-type(2n) {
+    background-color: transparent;
+}
+
+.docsTableWrapper th div {
+    padding: 6px 12px;
+    color: #36454F;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+}
+
+.docsTableWrapper th div.sorting:before {
+    position: absolute;
+    display: block;
+    opacity: 0.25;
+    right: 10px;
+    line-height: 9px;
+    font-size: 0.9em;
+    top: 50%;
+    content: "▾";
+}
+
+.docsTableWrapper th div.sorting_asc:before {
+    opacity: 0.7 !important;
+}
+
+.docsTableWrapper th div.sorting:after {
+    position: absolute;
+    display: block;
+    opacity: 0.25;
+    right: 10px;
+    line-height: 9px;
+    font-size: 0.9em;
+    bottom: 50%;
+    content: "▴";
+}
+
+.docsTableWrapper th div.sorting_desc:after {
+    opacity: 0.7 !important;
+}
+
+.docsTableWrapper th div input,
+.docsTableWrapper th div select {
+    width: 100%;
+    color: #36454F;
+    border: 1px solid #d1d3d4;
+    border-radius: 3px;
+    background: transparent;
+    padding: 2px 8px;
+    outline: none !important;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
+
+.docsTableWrapper th div select {
+    width: calc(100% + 4px);
+    padding: 1.5px 2px;
+    margin: 0 -2px;
+    margin-bottom: 8px;
+}
+
+.docsTableWrapper th div select option {
+    font-size: 0.7rem;
+}
+
+.docsTableWrapper td {
+    padding: 6px 12px;
+    white-space: nowrap;
+    color: #757575;
+    font-size: 14px;
+}
+
+.docsTableWrapper .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    padding-right: 8px;
+    padding-left: 16px;
+}
+
+.docsTableWrapper .pagination * {
+    font-size: 0.8rem;
+}
+
+.docsTableWrapper .pagination .pagination-left strong {
+    font-weight: 500;
+    color: #36454F;
+}
+
+.docsTableWrapper .pagination .pagination-left select {
+    width: 44px;
+    padding: 1px;
+    margin: 0 4px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #d1d3d4;
+    color: #757575;
+    border-radius: 3px;
+}
+
+.docsTableWrapper .pagination .pagination-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.docsTableWrapper .pagination .pagination-info {
+    margin: 0 4px;
+}
+
+.docsTableWrapper .pagination .pagination-right button {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #757575;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.docsTableWrapper .pagination .pagination-right button * {
+    font-size: 1.2rem;
+}
+
+.docsTableWrapper .pagination .pagination-right button:disabled {
+    color: #d1d3d4;
+}
